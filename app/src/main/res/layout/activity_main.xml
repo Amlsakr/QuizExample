@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    tools:context="com.example.aml.quizexample.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:id="@+id/button_next"
+        android:text="@string/show_definition"
+        android:onClick="onButtonClick"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view_word"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="A sample word"
+        android:layout_margin="16dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="8dp"
+        android:background="@color/colorPrimaryDark"
+        />
+   <TextView
+       android:id="@+id/text_view_definition"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="5"
+       android:gravity="center"
+       android:paddingBottom="8dp"
+       android:paddingLeft="32dp"
+       android:paddingRight="32dp"
+       android:paddingTop="8dp"
+       android:text="A sample description. should be deleted."/>
+
+
+
+</LinearLayout>
